@@ -1,3 +1,6 @@
+__init__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__init__.py
+__main__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__main__.py
+all_cards.csv located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/all_cards.csv
 base.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/base.py
 board.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/board.py
 card.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/card.py
@@ -5,15 +8,11 @@ cardbundle.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads
 deck_loader.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/deck_loader.py
 game.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/game.py
 hooks.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/hooks.py
+json2csv.py located at  https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/json2csv.py
+meldsets.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/meldsets.py
 player.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/player.py
 rules_engine.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/rules_engine.py
 test_arena_placement.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/test_arena_placement.py
 test_hooks_lifecycle.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/test_hooks_lifecycle.py
 token.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/token.py
 turn_manager.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/turn_manager.py
-__init__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__init__.py
-__main__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__main__.py
-all_cards.csv located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/all_cards.csv
-json2csv.py located at  https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/json2csv.py
-meldsets.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/meldsets.py
-
