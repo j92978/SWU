@@ -77,7 +77,7 @@ class Game:
 
         elif card.card_type == "upgrade":
             print(f"{player.get_name()} plays upgrade {card.name} (attach via action).")
-            # TODO: implement attachment logic here later
+            # implement attachment logic here later
 
         elif card.card_type == "resource":
             res_zone = player.get_board().find_zone("Resources")
