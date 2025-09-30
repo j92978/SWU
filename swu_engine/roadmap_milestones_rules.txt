@@ -1,0 +1,142 @@
+# Star Wars Unlimited OOP Engine — Milestone Roadmap (with Rules Cross-References)
+
+## ✅ Completed Foundations (Pre-Milestone)
+- Core entities (zones, piles, bundles, cards, players, bases, game loop)
+- Board scaffolding (zones/piles per player)
+- TurnManager cycling phases
+- End-of-turn hook support
+- Basic arena placement (ground/space)
+- CSV card database loader
+- Deck wrapper with shuffle/draw/mulligan
+- Decklist loader from text/dict
+- Game.delayed_effects + hooks framework
+- Basic show_board() output
+
+---
+
+## 🚩 Milestone 1: MVP Playable Core
+Goal: Players can load decks, mulligan, and play basic cards into arenas.
+
+- [ ] Implement `Deck.validate()` fully (1 leader, 1 base, ≥50 main, ≤3 copies, no tokens)
+- [ ] Integrate mulligan into `Game.start()` (offer once per player, replace hand)
+- [ ] Assign initiative at game start
+- [ ] Pass initiative at end of round
+- [ ] Create `move_to_zone()` / `move_to_pile()` helpers
+
+📘 Rules Reference:
+- Deck construction & mulligan — Comprehensive Rules, “Deckbuilding & Setup” section
+- Initiative — “Initiative counter” section
+- Game start — “Setup sequence”
+
+Deliverable: Two players can start a game with valid decks, mulligan, take turns, and place units into ground/space arenas.
+
+---
+
+## 🚩 Milestone 2: Combat Prototype
+Goal: Basic attack/defend interactions, minimal keyword support.
+
+- [ ] Implement minimal attack flow:
+  - [ ] Declare attackers
+  - [ ] Declare defenders (Sentinel restrictions)
+  - [ ] Assign damage
+  - [ ] Defeat destroyed units
+- [ ] Allow attacking base if arena clear
+- [ ] Implement **Sentinel**
+- [ ] Implement **Overwhelm**
+
+📘 Rules Reference:
+- Combat sequence — “Attack with a Unit” (declare → assign damage → complete attack)
+- Sentinel — keyword rules
+- Overwhelm — keyword rules
+
+Deliverable: Units can attack, defend, and resolve combat. Sentinel and Overwhelm affect combat correctly.
+
+---
+
+## 🚩 Milestone 3: Expanded Rules & Keywords
+Goal: Add more depth with keywords and triggers.
+
+- [ ] Implement **Restore**
+- [ ] Implement **Ambush**
+- [ ] Implement defeat/death triggers
+- [ ] Implement on-enter/leave battlefield hooks
+- [ ] Enforce aspect penalty on mismatched plays
+- [ ] Implement exhaust/refresh cycle for resources
+
+📘 Rules Reference:
+- Restore — keyword rules
+- Ambush — keyword rules
+- Aspect penalty — resource & cost section
+- Death/leave triggers — “When Defeated” and “Leaves Play” sections
+
+Deliverable: More card interactions become legal; deckbuilding rules fully enforced.
+
+---
+
+## 🚩 Milestone 4: Effects & Visibility
+Goal: Handle more complex game states and user experience.
+
+- [ ] Add duration handling (until end of phase/turn/round)
+- [ ] Implement effect layering system
+- [ ] Implement visibility rules for zones (hidden/public)
+- [ ] Improve `show_board()` layout with zone separation and visibility
+
+📘 Rules Reference:
+- Lasting effects — “Until end of phase/turn/round” clarifications
+- Layers & modifiers — “Continuous effects layering”
+- Visibility — “Game state and hidden information”
+
+Deliverable: Players see correct public/hidden zones, and effects resolve correctly with durations.
+
+---
+
+## 🚩 Milestone 5: AI & Debugging
+Goal: Make the game more testable and playable solo.
+
+- [ ] Random legal action AI
+- [ ] Heuristic-based AI (play cheapest, attack weakest)
+- [ ] Add debug toggles (delayed effects, initiative, priority)
+
+📘 Rules Reference:
+- (Not in rules — engine implementation detail)
+
+Deliverable: Game can be played vs. AI for testing; debugging views available.
+
+---
+
+## 🎯 Final Deliverable
+A complete SWU emulator that:
+- Loads decks from CSV with Set-Number IDs
+- Runs full turn/phase loop with initiative, mulligan, start/end triggers
+- Supports arena placement, combat flow, and all major keywords
+- Enforces deckbuilding rules and visibility
+- Allows human vs human and human vs AI play
+
+
+---
+
+## 📖 Rule Section Index (for quick lookup)
+
+### Milestone 1: MVP Core
+- Deck construction & mulligan — Setup sequence, Mulligan
+- Initiative — Initiative counter rules
+- Game start — Bases, leaders, shuffling, mulligan, resource two
+
+### Milestone 2: Combat Prototype
+- Attack with a Unit — Attack steps (declare, deal damage, complete)
+- Sentinel — Defender restrictions
+- Overwhelm — Keyword rules
+
+### Milestone 3: Expanded Rules & Keywords
+- Restore — Heal base on attack
+- Ambush — Response timing and nested attack
+- Aspect penalty — Costs and resource mismatches
+- Death / leave play triggers — “When Defeated” and “Leaves Play”
+
+### Milestone 4: Effects & Visibility
+- Lasting effects — “Until end of phase/turn/round” clarifications
+- Layering — Continuous effects and modifiers
+- Visibility — Hidden vs public zones
+
+### Milestone 5: AI & Debugging
+- (Not in rules — engine implementation detail)
