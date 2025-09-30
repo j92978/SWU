@@ -13,3 +13,7 @@ token.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/mast
 turn_manager.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/turn_manager.py
 __init__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__init__.py
 __main__.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/__main__.py
+all_cards.csv located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/all_cards.csv
+json2csv.py located at  https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/json2csv.py
+meldsets.py located at https://raw.githubusercontent.com/j92978/SWU/refs/heads/master/swu_engine/meldsets.py
+
