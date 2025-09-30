@@ -446,7 +446,7 @@ class RulesEngine:
                     legal_targets.append(opp.base)
 
             if legal_targets:
-                target = legal_targets[0]  # TODO: selection logic / UI later
+                target = legal_targets[0]  # selection logic / UI later
                 print(f"{card.name} (Ambush) attacks {getattr(target, 'name', target.primary_card.name)} immediately!")
                 game.deal_damage(target, card.attack)
                 bundle.exhaust()  # Ambush attack still exhausts the unit
